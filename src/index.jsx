@@ -1,19 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Backpack from './Backpack';
 //import App from './App';
 // import Hello from './Hello';
-import Counter from './Couter';
+//import Counter from './Couter';
+//import Backpack from './Backpack';
+import Bmi from './Bmi';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Counter/>
-
-  {/*<App> */}
+  <Bmi></Bmi>
+  {/*<Backpack></Backpack>
+  <App> */}
   </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();

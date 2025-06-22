@@ -1,0 +1,90 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* คุณสามารถเปลี่ยน URL รูปภาพพื้นหลังเป็นรูปภาพอวกาศที่คุณต้องการได้ */
+    background: url('https://images.unsplash.com/photo-1506748686214-e0c462b4c53c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    color: #f0f8ff; /* Light, space-like text color */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* ป้องกัน scrollbar หากรูปภาพใหญ่เกินไป */
+}
+
+#root {
+    background-color: rgba(0, 0, 0, 0.75); /* Slightly transparent black for the container */
+    padding: 2.5rem 3.5rem; /* เพิ่ม padding เพื่อความกว้างขวาง */
+    border-radius: 15px; /* ทำให้โค้งมนขึ้นเล็กน้อย */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* เพิ่มเงาให้ดูมีมิติมากขึ้น */
+    text-align: center;
+    width: 90%; /* เพิ่มความกว้างของคอนเทนเนอร์ */
+    max-width: 500px; /* จำกัดความกว้างสูงสุด */
+    border: 1px solid rgba(176, 196, 222, 0.3); /* ขอบบางๆ สีอ่อน */
+}
+
+h1 {
+    color: #87cefa; /* Sky blue for headings, more vibrant */
+    margin-bottom: 1.5rem;
+    font-size: 2.8rem; /* เพิ่มขนาดตัวอักษรสำหรับ H1 หลัก */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* เงาเข้มขึ้น */
+    letter-spacing: 2px; /* เพิ่มระยะห่างตัวอักษรเล็กน้อย */
+}
+
+/* สำหรับ h1 ที่อยู่ใน BmiText */
+#root h1:not(:first-child) {
+    font-size: 2rem; /* ขนาดเล็กลงสำหรับหัวข้อผลลัพธ์ */
+    margin-top: 1.5rem;
+    color: #afeeee; /* Pale turquoise for result headings */
+}
+
+
+input {
+    width: calc(100% - 20px); /* เต็มความกว้างของ container พร้อม padding */
+    padding: 0.8rem;
+    margin: 0.7rem 0;
+    border: 1px solid #778899; /* Light slate gray border */
+    border-radius: 8px; /* โค้งมนขึ้น */
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0.15); /* Slightly more transparent input background */
+    color: #e0ffff; /* Light cyan text in input */
+    box-sizing: border-box; /* ทำให้ padding ไม่เพิ่มขนาดโดยรวม */
+}
+
+input::placeholder {
+    color: rgba(240, 248, 255, 0.6); /* สี placeholder ที่เข้ากับธีม */
+}
+
+button {
+    background-color: #6a5acd; /* Slate blue, more cosmic feel */
+    color: white;
+    padding: 1rem 2rem; /* เพิ่มขนาดปุ่ม */
+    border: none;
+    border-radius: 8px; /* โค้งมนขึ้น */
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* เพิ่มเงาปุ่ม */
+}
+
+button:hover {
+    background-color: #483d8b; /* Darker slate blue on hover */
+    transform: translateY(-2px); /* ยกปุ่มขึ้นเล็กน้อยเมื่อ hover */
+}
+
+div {
+    margin-top: 1.5rem;
+    font-size: 1.4rem; /* เพิ่มขนาดตัวอักษรสำหรับผลลัพธ์ BMI */
+    color: #e0ffff; /* Light cyan for BMI result */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+img {
+    margin-top: 1.5rem;
+    border-radius: 10px; /* โค้งมนขึ้น */
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* เพิ่มเงารูปภาพ */
+    border: 2px solid rgba(176, 196, 222, 0.5); /* ขอบรูปภาพ */
+}
